@@ -1,0 +1,16 @@
+
+<div class="container">
+    <h2>Add New Restaurant</h2>
+    <form (ngSubmit)="addRestaurant()">
+      <div class="form-group">
+        <label for="restaurantName">Restaurant Name</label>
+        <input type="text" class="form-control" id="restaurantName" name="restaurantName" [(ngModel)]="restaurant.name" required>
+      </div>
+      <div class="form-group">
+        <label for="cityId">City ID</label>
+        <input type="number" class="form-control" id="cityId" name="cityId" [(ngModel)]="restaurant.cityId" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Restaurant</button>
+    </form>
+  </div>
+  
